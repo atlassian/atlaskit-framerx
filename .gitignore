@@ -1,0 +1,7 @@
+# MacOS
+.DS_Store
+
+# Framer X
+.cache
+.config.json
+.backups
