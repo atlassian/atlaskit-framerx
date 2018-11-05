@@ -11,7 +11,20 @@
 		"react-dom": "^16.3.0"
 	},
 	"framer": {
-		"id": "d54499d2-ab45-4f06-8312-5a91a2064626"
+		"id": "d54499d2-ab45-4f06-8312-5a91a2064626",
+		"displayName": "Atlassian Atlaskit"
 	},
-	"author": "Lucas Ritter"
+	"author": "Lucas Ritter, Atlassian",
+	"dependencies": {
+		"@atlaskit/button": "9.0.16",
+		"@atlaskit/code": "^8.0.12",
+		"styled-components": "^3.2.6"
+	},
+	"name": "@framer/lucasritter.atlassian-atlaskit",
+	"version": "1.0.0",
+	"keywords": [
+		"atlassian",
+		"atlaskit",
+		"ui kit"
+	]
 }
