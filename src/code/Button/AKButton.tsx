@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { PropertyControls, ControlType } from 'framer';
 import Button from '@atlaskit/button';
+import AKProps from '../AKProps';
 
 const style: React.CSSProperties = {
   display: 'flex',
@@ -11,7 +12,7 @@ const style: React.CSSProperties = {
 };
 
 // Define type of property
-interface Props {
+interface Props extends AKProps {
   text: string;
   isLoading: boolean;
   isDisabled: boolean;
@@ -26,7 +27,10 @@ export class AKButton extends React.Component<Props> {
     isLoading: false,
     isDisabled: false,
     appearance: 'primary',
-    shouldFitContainer: false
+    shouldFitContainer: false,
+
+    width: 120,
+    height: 38
   }
   
   // The property controls for the component.

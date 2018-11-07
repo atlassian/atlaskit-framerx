@@ -17,7 +17,9 @@
 	"author": "Lucas Ritter, Atlassian",
 	"dependencies": {
 		"@atlaskit/button": "9.0.16",
+		"@atlaskit/checkbox": "^5.0.5",
 		"@atlaskit/code": "^8.0.12",
+		"@atlaskit/toggle": "^5.0.10",
 		"styled-components": "^3.2.6"
 	},
 	"name": "@framer/lucasritter.atlassian-atlaskit",

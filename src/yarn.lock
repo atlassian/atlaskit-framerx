@@ -22,6 +22,18 @@
     "@babel/runtime" "^7.0.0"
     babel-runtime "^6.26.0"
 
+"@atlaskit/checkbox@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@atlaskit/checkbox/-/checkbox-5.0.5.tgz#bee41cb3378f78bfc610e57f1a391ae720419c18"
+  integrity sha512-UWPZauSvq5Ud9YD+ch9kk6KwZxiig2bpf+hEQ8HOwy9yUExjqvfSoTdS3W8AI3aNvqe9HcdZtRMvH3X4DKUeWQ==
+  dependencies:
+    "@atlaskit/analytics-next" "^3.0.10"
+    "@atlaskit/icon" "^14.0.2"
+    "@atlaskit/theme" "^6.1.1"
+    "@babel/runtime" "^7.0.0"
+    babel-runtime "^6.26.0"
+    prop-types "^15.5.10"
+
 "@atlaskit/code@^8.0.12":
   version "8.0.12"
   resolved "https://registry.yarnpkg.com/@atlaskit/code/-/code-8.0.12.tgz#10da87d030e16295643140a0222e9dfce489a872"
@@ -31,6 +43,16 @@
     "@babel/runtime" "^7.0.0"
     memoize-one "^3.0.1"
     react-syntax-highlighter "^9.0.1"
+
+"@atlaskit/icon@^14.0.2":
+  version "14.2.1"
+  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-14.2.1.tgz#13aad7cf387d3538b33dd18d1fa2882a9c4ba3b7"
+  integrity sha512-7K+3IpH49QWOzx0dE385OhEl7vrI/XeEC2/Pc4UZ8JzZJmpPikZeMl+bE/eZB4PVwX4A2pyiDHv5EyClNRId2Q==
+  dependencies:
+    "@atlaskit/theme" "^6.1.1"
+    "@babel/runtime" "^7.0.0"
+    babel-runtime "^6.26.0"
+    uuid "^3.1.0"
 
 "@atlaskit/spinner@9.0.10":
   version "9.0.10"
@@ -49,6 +71,17 @@
   dependencies:
     "@babel/runtime" "^7.0.0"
     prop-types "^15.5.10"
+
+"@atlaskit/toggle@^5.0.10":
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/@atlaskit/toggle/-/toggle-5.0.10.tgz#f958022495ff0bf53fbb5f11184a90d4c60da8de"
+  integrity sha512-ecr9UXvaUP/XUY8BC0+pa+so28ZaXBOnuKa4cs861t84vk9sZeyfYMcOU7FeN8qmZ3pS1ovUiYpIcxAm+gUrbA==
+  dependencies:
+    "@atlaskit/analytics-next" "^3.0.10"
+    "@atlaskit/icon" "^14.0.2"
+    "@atlaskit/theme" "^6.1.1"
+    "@babel/runtime" "^7.0.0"
+    uuid "^3.1.0"
 
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2":
   version "7.1.2"
@@ -526,6 +559,11 @@ ua-parser-js@^0.7.18:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"
   integrity sha512-T3PVJ6uz8i0HzPxOF9SWzWAlfN/DavlpQqepn22xgve/5QecC+XMCAtmUNnY7C9StehaV6exjUCI801lOI7QlQ==
+
+uuid@^3.1.0:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
+  integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
 whatwg-fetch@>=0.10.0:
   version "3.0.0"

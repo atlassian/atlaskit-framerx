@@ -5,32 +5,44 @@
       "size" : 46
     },
     "build/index.js" : {
-      "sha1" : "vsNOqfhUBYEYEDM0WazTBBXmsyQ=",
-      "size" : 1631264
+      "sha1" : "JBNvPWJXy+JoBTkWAAbyKyCLL34=",
+      "size" : 1847099
+    },
+    "code/AKProps.ts" : {
+      "sha1" : "1kYDRXhkqWljsVezuDFUq9SUc7o=",
+      "size" : 71
     },
     "code/Button/AKButton.tsx" : {
-      "sha1" : "wI2FGabeqWGoxDhGb9sl2p2RChE=",
-      "size" : 1629
+      "sha1" : "Jm2Z+EVO3yjENy0G75iRkDZy6eo=",
+      "size" : 1712
     },
     "code/canvas.tsx" : {
       "sha1" : "XAWJ2Vc6zFl/c1ILjaRwb7ijf8Q=",
       "size" : 179
     },
+    "code/Checkbox/AKCheckbox.tsx" : {
+      "sha1" : "Ssu6d1Uo1UG5MTHfu/XmuYLwr9c=",
+      "size" : 1299
+    },
     "code/Code/AKCodeBlock.tsx" : {
-      "sha1" : "64Ms8UDrX7+sfHk/e4rcdSufGrM=",
-      "size" : 2114
+      "sha1" : "V0DLO+tHWecEqYsIqIAEtjqc7Ic=",
+      "size" : 2209
     },
     "code/Code/AKCodeInline.tsx" : {
-      "sha1" : "whYDpkcgOwzzinNC4VX3Vd8l6t0=",
-      "size" : 2098
+      "sha1" : "ZnqWle3eU0AtqATiU5kX4/Txj8U=",
+      "size" : 2180
     },
     "code/Code/Code.ts" : {
       "sha1" : "VmK7v3rrt6NuJm4pFiXldACwTFQ=",
       "size" : 1732
     },
+    "code/Toggle/AKToggle.tsx" : {
+      "sha1" : "fucTJqIsN/XrrZ1h4ls4RZuIRoM=",
+      "size" : 1279
+    },
     "design/document.json" : {
-      "sha1" : "9IQb0RjL97BUY42Rs0993r3Oj9E=",
-      "size" : 8999
+      "sha1" : "qSkuBhl/MnX7lQ1u8fCRD4mh2rI=",
+      "size" : 9001
     },
     "design/images/YqBKCQtxIw78g24IsqXf6zU2M.png" : {
       "sha1" : "Yq+B/KCQtxIw78g24IsqXf6zU2M=",
@@ -45,8 +57,8 @@
       "size" : 3701
     },
     "package.json" : {
-      "sha1" : "soegZq3g5xSdQ0fTHG7PI6PAGVg=",
-      "size" : 612
+      "sha1" : "az6YQvifWW1gYsI0fAMEuvJI5Qo=",
+      "size" : 679
     },
     "README.md" : {
       "sha1" : "8eyBQfBD9008gw7etxkdhQ8yAso=",
@@ -57,8 +69,8 @@
       "size" : 277
     },
     "yarn.lock" : {
-      "sha1" : "frxF5KTzfvAcenU83ztRhFKahFI=",
-      "size" : 23867
+      "sha1" : "hzvf3ml1zSN5L04IUawisNd0Bug=",
+      "size" : 25430
     }
   },
   "uuid" : "5E8BEF01-7BB6-4E94-87C6-BA0F08D84F84"

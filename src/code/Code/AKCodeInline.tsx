@@ -2,6 +2,7 @@ import * as React from 'react';
 import { PropertyControls, ControlType } from 'framer';
 import { AkCode } from '@atlaskit/code';
 import { displayLanguages, languages, allowedFileTypes } from './Code';
+import AKProps from '../AKProps';
 
 const style: React.CSSProperties = {
   height: '100%',
@@ -9,7 +10,7 @@ const style: React.CSSProperties = {
 };
 
 // Define type of property
-interface Props {
+interface Props extends AKProps {
   usingFile: boolean;
   language: boolean;
   code: string;
@@ -25,7 +26,10 @@ export class AKCodeInline extends React.Component<Props, State> {
   static defaultProps = {
     usingFile: false,
     language: 'html',
-    code: '<CoolCode />'
+    code: '<CoolCode />',
+
+    width: 95,
+    height: 22
   }
 
   // The property controls for the component.

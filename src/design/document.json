@@ -270,7 +270,7 @@
         "isExternalMaster" : null,
         "isMaster" : false,
         "isTarget" : false,
-        "left" : 0,
+        "left" : 25,
         "locked" : false,
         "name" : "Artwork",
         "navigationTarget" : null,
@@ -295,7 +295,7 @@
         "saturateEnabled" : 0,
         "sepia" : 0,
         "sepiaEnabled" : 0,
-        "top" : 0,
+        "top" : 51,
         "visible" : true,
         "width" : 1600,
         "widthType" : 0
