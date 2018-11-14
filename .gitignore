@@ -1,6 +1,9 @@
 # MacOS
 .DS_Store
 
+#repo
+*/node_modules/*
+
 # Framer X
 .cache
 .config.json

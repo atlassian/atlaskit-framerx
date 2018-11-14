@@ -1,53 +1,45 @@
 import * as React from 'react';
 import { PropertyControls, ControlType } from 'framer';
 import Toggle from '@atlaskit/toggle';
+import { md, Example, Props, code } from '@atlaskit/docs';
 
 type Sizes = 'regular' | 'large';
 
-const style: React.CSSProperties = {
-  height: '100%',
-  display: 'flex',
-  width: '100%',
-  justifyContent: 'center',
-  alignItems: 'center'
-  
-}
-
 // Define the properties of the component
 interface Props {
-  disabled: boolean;
+  isDisabled: boolean;
   size: Sizes;
   label: string;
-  isChecked: boolean;
+  isDefaultChecked: boolean;
 }
 
 // Unstable, don't use yet
 export class AKToggle extends React.Component<Props> {
   // The default properties of the component.
   static defaultProps = {
-    disabled: false,
+    isDisabled: false,
     size: 'regular',
     label: '',
-    isChecked: true
+    isDefaultChecked: true
   }
 
   // The property controls for the component.
   static propertyControls: PropertyControls = {
-    disabled: {
+    isDisabled: {
       type: ControlType.Boolean,
       title: ''
     },
     size: {
       type: ControlType.Enum,
       title: 'Size',
-      optionTitles: ['🔘 Regular', '⚪️ Large'],
+      optionTitles: ['Regular', 'Large'],
       options: ['regular', 'large']
     },
     label: {
       type: ControlType.String,
       title: 'Label'
     },
-    isChecked: {
+    isDefaultChecked: {
       type: ControlType.Boolean,
       title: 'Checked?'
     }
@@ -55,9 +47,7 @@ export class AKToggle extends React.Component<Props> {
 
   render() {
     return(
-      <div style={style}>
         <Toggle {...this.props} />
-      </div>
     )
   }
 }

@@ -4,12 +4,6 @@ import { AkCodeBlock } from '@atlaskit/code';
 import { displayLanguages, languages, allowedFileTypes } from './Code';
 import AKProps from '../AKProps';
 
-const style: React.CSSProperties = {
-  height: '100%',
-  display: 'flex',
-  width: '100%'
-};
-
 // Define type of property
 interface Props extends AKProps {
   usingFile: boolean;
@@ -91,9 +85,8 @@ export class AKCodeBlock extends React.Component<Props, State> {
 
   render() {
     return (
-      <div style={style}>
         <AkCodeBlock text={this.state.code} language={this.props.language} />
-      </div>)
+    )
   }
 
 }

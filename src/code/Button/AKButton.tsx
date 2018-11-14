@@ -29,8 +29,8 @@ export class AKButton extends React.Component<Props> {
     appearance: 'primary',
     shouldFitContainer: false,
 
-    width: 120,
-    height: 38
+    width: 300,
+    height: 900
   }
   
   // The property controls for the component.

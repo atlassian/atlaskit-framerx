@@ -16,9 +16,15 @@
 	},
 	"author": "Lucas Ritter, Atlassian",
 	"dependencies": {
+		"@atlaskit/badge": "^9.2.0",
 		"@atlaskit/button": "9.0.16",
 		"@atlaskit/checkbox": "^5.0.5",
 		"@atlaskit/code": "^8.0.12",
+		"@atlaskit/docs": "^5.2.0",
+		"@atlaskit/global-navigation": "^5.2.1",
+		"@atlaskit/icon": "^14.3.0",
+		"@atlaskit/modal-dialog": "^7.0.10",
+		"@atlaskit/navigation-next": "^3.23.0",
 		"@atlaskit/toggle": "^5.0.10",
 		"styled-components": "^3.2.6"
 	},

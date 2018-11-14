@@ -5,15 +5,6 @@ import AKProps from '../AKProps';
 
 type Sizes = 'regular' | 'large';
 
-const style: React.CSSProperties = {
-  height: '100%',
-  display: 'flex',
-  width: '100%',
-  justifyContent: 'left',
-  alignItems: 'center'
-  
-}
-
 // Define the properties of the component
 interface Props extends AKProps {
   label: string;
@@ -56,9 +47,7 @@ export class AKCheckbox extends React.Component<Props> {
 
   render() {
     return (
-      <div style={style}>
         <Checkbox {...this.props}/>
-      </div>
     )
   }
 
