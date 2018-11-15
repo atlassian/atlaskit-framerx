@@ -7,15 +7,17 @@
 		"framer": "^0.9.3"
 	},
 	"peerDependencies": {
-		"framer": "^0.9.3",
+		"framer": "^0.9.2",
 		"react": "^16.3.0",
 		"react-dom": "^16.3.0"
 	},
 	"framer": {
-		"id": "d54499d2-ab45-4f06-8312-5a91a2064626",
-		"displayName": "Atlassian Atlaskit"
+		"id": "e2b64fa2-bc78-4159-82a7-f13d6b1a9893",
+		"displayName": "Atlassian Design System"
 	},
-	"author": "Lucas Ritter, Atlassian",
+	"author": "Ee Venn Soh",
+	"name": "@framer/venn.atlassian-design-system",
+	"version": "1.4.0",
 	"dependencies": {
 		"@atlaskit/badge": "^9.2.0",
 		"@atlaskit/button": "9.0.16",
@@ -30,12 +32,5 @@
 		"@atlaskit/toggle": "^5.0.10",
 		"@framer/benjamin.properties": "^1.2.0",
 		"styled-components": "^3.2.6"
-	},
-	"name": "@framer/lucasritter.atlassian-atlaskit",
-	"version": "1.0.0",
-	"keywords": [
-		"atlassian",
-		"atlaskit",
-		"ui kit"
-	]
+	}
 }
