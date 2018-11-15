@@ -31,6 +31,7 @@ interface Props {
     helperText?: string;
     label?: string;
     isRequired?: string;
+    options: string;
 }
 
 export class AkSelect extends React.Component<Props> {
@@ -39,7 +40,8 @@ export class AkSelect extends React.Component<Props> {
     static defaultProps = {
         type: "default",
         placeholder: 'Select...',
-        label: ''
+        label: '',
+        options: 'Atlassian|Sean Curtis|You'
     }
 
     // Items shown in property panel
@@ -75,6 +77,10 @@ export class AkSelect extends React.Component<Props> {
     isRequired: {
         type: ControlType.Boolean,
         title: 'isRequired?'
+    },
+    options: {
+        type: ControlType.String,
+        title: 'Options'
     }
     }
 
@@ -92,16 +98,17 @@ export class AkSelect extends React.Component<Props> {
     }
 
     renderSelect() {
-        const {type, isInvalid, invalidMessage, helperText, ...rest} = this.props;
+        const {type, isInvalid, invalidMessage, helperText, options, ...rest} = this.props;
+        const selectOptions = options === '' ? [] : options.split('|').map(v => ({label: v, value: v}));
         switch(type){
             case 'async':
-                return <AsyncSelect {...rest} />
+                return <AsyncSelect options={selectOptions} {...rest} />
             case 'creatable':
-                return <CreatableSelect {...rest}/>
+                return <CreatableSelect options={selectOptions} {...rest}/>
             case 'country':
                 return <CountrySelect/>
             default:
-                return <Select {...rest}/>
+                return <Select options={selectOptions} {...rest}/>
         }
     }
 
