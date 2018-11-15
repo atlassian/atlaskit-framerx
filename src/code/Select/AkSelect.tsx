@@ -30,6 +30,7 @@ interface Props {
     invalidMessage?: string;
     helperText?: string;
     label?: string;
+    isRequired?: string;
 }
 
 export class AkSelect extends React.Component<Props> {
@@ -70,18 +71,22 @@ export class AkSelect extends React.Component<Props> {
     label: {
         type: ControlType.String,
         title: 'label'
+    },
+    isRequired: {
+        type: ControlType.Boolean,
+        title: 'isRequired?'
     }
     }
 
     Outer = ({children}) => {
-        const { label, isInvalid, invalidMessage, helperText } = this.props;
+        const { label, isInvalid, invalidMessage, helperText, isRequired } = this.props;
         if (isInvalid === 'none' && label === '') return <React.Fragment>{children}</React.Fragment>;
         if (isInvalid === 'true') {
-            return <Field label={label} invalidMessage={invalidMessage} isInvalid={isInvalid === 'true'}>
+            return <Field label={label} invalidMessage={invalidMessage} isInvalid={isInvalid === 'true'} isRequired={isRequired}>
                 {children}
             </Field>
         }
-        return <Field label={label} helperText={helperText} isInvalid={isInvalid === 'false' ? false : undefined}>
+        return <Field label={label} helperText={helperText} isInvalid={isInvalid === 'false' ? false : undefined} isRequired={isRequired}>
             {children}
         </Field>
     }
