@@ -17,12 +17,12 @@ interface Props {
     fixed: boolean
 }
 
-export class AkSelect extends React.Component<Props> {
+export class AkFormHeader extends React.Component<Props> {
 
     // Set default properties
     static defaultProps = {
-        title: "",
-        description: '',
+        title: "Form header",
+        description: 'Form description',
         fixed: false,
     }
 
