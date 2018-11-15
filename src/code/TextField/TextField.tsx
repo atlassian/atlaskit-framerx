@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { PropertyControls, ControlType } from 'framer';
 import FieldText from '@atlaskit/field-text';
+import { Field } from '@atlaskit/form';
 
 type AutoComplete = 'on' | 'off';
 
@@ -67,7 +68,7 @@ export class TextField extends React.Component<Props> {
     },
     pattern: {
       type: ControlType.String,
-      title: 'Regular expression pattern'
+      title: 'Pattern'
     },
     disabled: {
       type: ControlType.Boolean,
@@ -135,9 +136,25 @@ export class TextField extends React.Component<Props> {
     }
   }
 
+  Outer = ({children}) => {
+    const { label, isInvalid, invalidMessage, required } = this.props;
+    if (label === '') return <React.Fragment>{children}</React.Fragment>;
+    if (isInvalid === true) {
+        return <Field label={label} invalidMessage={invalidMessage} isRequired={required}>
+            {children}
+        </Field>
+    }
+    return <Field label={label} isRequired={required}>
+        {children}
+    </Field>
+  }
+
   render() {
     return(
-      <FieldText {...this.props} />
+      <this.Outer> 
+        <FieldText {...this.props} />
+      </this.Outer>
+      
     )
   }
 }
