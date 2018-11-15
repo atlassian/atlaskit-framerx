@@ -19,6 +19,7 @@
 	"name": "@framer/venn.atlassian-design-system",
 	"version": "1.4.0",
 	"dependencies": {
+		"@atlaskit/avatar-group": "^2.1.5",
 		"@atlaskit/badge": "^9.2.0",
 		"@atlaskit/banner": "^7.0.8",
 		"@atlaskit/breadcrumbs": "^6.0.10",
@@ -34,6 +35,7 @@
 		"@atlaskit/modal-dialog": "^7.0.10",
 		"@atlaskit/navigation-next": "^3.23.0",
 		"@atlaskit/progress-indicator": "^5.0.8",
+		"@atlaskit/progress-tracker": "^4.0.8",
 		"@atlaskit/radio": "^0.2.4",
 		"@atlaskit/select": "^6.1.7",
 		"@atlaskit/toggle": "^5.0.10",
