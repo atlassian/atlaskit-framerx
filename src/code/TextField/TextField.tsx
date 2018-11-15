@@ -34,7 +34,7 @@ export class TextField extends React.Component<Props> {
   static defaultProps = {
     autoComplete: 'off',
     form: 'regular',
-    pattern: '\\w',
+    pattern: '',
     disabled: false,
     required: false,
     isInvalid: false,
@@ -67,7 +67,7 @@ export class TextField extends React.Component<Props> {
     },
     pattern: {
       type: ControlType.String,
-      title: 'Pattern'
+      title: 'Regular expression pattern'
     },
     disabled: {
       type: ControlType.Boolean,
