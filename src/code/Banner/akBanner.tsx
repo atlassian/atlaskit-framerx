@@ -15,15 +15,17 @@ const style: React.CSSProperties = {
 interface Props extends AKProps {
   text: string;
   appearance: string;
+  isOpen: boolean;
 }
 
 export class AKBanner extends React.Component<Props> {
   // The default properties of the component.
   static defaultProps = {
-    text: "1",
-    appearance: "primary",
-
+    text: "This is a banner",
+    appearance: "warning",
+    isOpen: true,
     width: 120,
+
     height: 38
   };
 
@@ -37,28 +39,27 @@ export class AKBanner extends React.Component<Props> {
       type: ControlType.Enum,
       title: "Appearance",
       optionTitles: [
-        "added",
-        "default",
-        "important",
-        "primary",
-        "primaryInverted",
-        "removed"
+        "warning",
+        "error",
+        "announcement"
       ],
       options: [
-        "added",
-        "default",
-        "important",
-        "primary",
-        "primaryInverted",
-        "removed"
+        "warning",
+        "error",
+        "announcement"
       ]
+    },
+    isOpen: {
+      type: ControlType.Boolean,
+      title: 'isOpen',
     }
   };
 
   render() {
+    const {text, ...rest} = this.props;
     return (
-      <Banner appearance="warning" isOpen {...this.props}>
-        sdfsdjflkdsj
+      <Banner {...rest}>
+        {text}
       </Banner>
     );
   }

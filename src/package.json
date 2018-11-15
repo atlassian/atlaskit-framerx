@@ -20,6 +20,7 @@
 	"version": "1.4.0",
 	"dependencies": {
 		"@atlaskit/badge": "^9.2.0",
+		"@atlaskit/banner": "^7.0.8",
 		"@atlaskit/breadcrumbs": "^6.0.10",
 		"@atlaskit/button": "9.0.16",
 		"@atlaskit/checkbox": "^5.0.5",
