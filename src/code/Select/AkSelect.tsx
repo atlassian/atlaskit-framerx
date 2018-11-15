@@ -29,6 +29,7 @@ interface Props {
     isInvalid?: string;
     invalidMessage?: string;
     helperText?: string;
+    label?: string;
 }
 
 export class AkSelect extends React.Component<Props> {
@@ -37,6 +38,7 @@ export class AkSelect extends React.Component<Props> {
     static defaultProps = {
         type: "default",
         placeholder: 'Select...',
+        label: ''
     }
 
     // Items shown in property panel
@@ -64,18 +66,22 @@ export class AkSelect extends React.Component<Props> {
     helperText: {
         type: ControlType.String,
         title: 'helperText'
+    },
+    label: {
+        type: ControlType.String,
+        title: 'label'
     }
     }
 
     Outer = ({children}) => {
-        const { isInvalid, invalidMessage, helperText } = this.props;
-        if (isInvalid === 'none') return <React.Fragment>{children}</React.Fragment>;
+        const { label, isInvalid, invalidMessage, helperText } = this.props;
+        if (isInvalid === 'none' && label === '') return <React.Fragment>{children}</React.Fragment>;
         if (isInvalid === 'true') {
-            return <Field invalidMessage={invalidMessage} isInvalid={true}>
+            return <Field label={label} invalidMessage={invalidMessage} isInvalid={isInvalid === 'true'}>
                 {children}
             </Field>
         }
-        return <Field helperText={helperText} isInvalid={false}>
+        return <Field label={label} helperText={helperText} isInvalid={isInvalid === 'false' ? false : undefined}>
             {children}
         </Field>
     }
@@ -95,10 +101,12 @@ export class AkSelect extends React.Component<Props> {
     }
 
     render() {
-        return <div><this.Outer> 
-        {
-           this.renderSelect()
-        }
-        </this.Outer></div>;
+        return <div>
+            <this.Outer> 
+                {
+                    this.renderSelect()
+                }
+            </this.Outer>
+        </div>;
     }
 }
