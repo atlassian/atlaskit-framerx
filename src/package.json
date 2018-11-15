@@ -29,6 +29,7 @@
 		"@atlaskit/modal-dialog": "^7.0.10",
 		"@atlaskit/navigation-next": "^3.23.0",
 		"@atlaskit/progress-indicator": "^5.0.8",
+		"@atlaskit/select": "^6.1.7",
 		"@atlaskit/toggle": "^5.0.10",
 		"@framer/benjamin.properties": "^1.2.0",
 		"styled-components": "^3.2.6"
