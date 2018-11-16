@@ -140,6 +140,69 @@ export const displayLanguages = [
   'XQuery'
 ]
 
+// You have to explicitly set every file type for now.
 export const allowedFileTypes = [
-  'ts', 'tsx'
+  'abap', // ABAP
+  'as', // ActionScript
+  'ads', 'adb', // Ada
+  'ino', // Arduino
+  'au3', // AutoIt
+  'c', 'h', // C
+  'cpp', 'hpp', // C++
+  'coffee', // CoffeeScript
+  'cs', // C#
+  'css', // CSS
+  'cu', // CUDA
+  'd', // D
+  'dart', // Dart
+  'dpr', // Delphi (Delphi Project File)
+  'ex', 'exs', // Elixir
+  'f', 'ftn', 'f90', 'f95', 'f03', 'f08', // Fortran
+  // Todo: FoxPro
+  'go', // Golang
+  'groovy', // Groovy
+  'hs', 'lhs', // Haskell
+  'hx', // Haxe
+  'htm', 'html', 'xhtml', // HTML
+  'java', // Java
+  'js', 'jsx', // JavaScript
+  'json', // JSON
+  'jl', // Julia
+  'kt', // Kotlin
+  'tex', // LaTeX + Tex
+  'ls', // LiveScript
+  'lua', // Lua
+  'nb', 'cdf', // Mathematica
+  'm', // Matlab + Objective-C + Octave
+  'mm', // Objective-C
+  'j', // Objective-J
+  'ml', 'mli', 'o', // OCaml + UNIX object
+  'pl', // Perl
+  'php', // PHP
+  'ps1', // Powershell
+  'pro', // Prolog
+  'pp', // Puppet
+  'py', // Python
+  'qml', // QML
+  'r', // R
+  'rkt', // Racket
+  'txt', // reStructuredText + Text
+  'rb', // Ruby
+  'rs', // Rust
+  'sass', // Sass
+  'scala', // Scala
+  'scm', 'ss', // Scheme
+  'sh', // Shell
+  'st', // SmallTalk
+  'sql', // SQL
+  'sml', // Standard ML
+  'swift', // Swift
+  'tcl', // Tcl
+  'ts', 'tsx', // TypeScript
+  'vala', // Vala
+  'v', // Verilog
+  'vb', // Visual Basic
+  'vhd', 'vhdl', // VHDL
+  'xml', 'sln', // XML
+  'xq', // XQuery
 ]
