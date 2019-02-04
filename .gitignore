@@ -1,10 +1,17 @@
 # MacOS
 .DS_Store
 
-#repo
+# repo
 */node_modules/*
 
 # Framer X
 .cache
 .config.json
 .backups
+.cache
+## Auth
+.npmrc
+
+# Editors
+.idea
+.vscode

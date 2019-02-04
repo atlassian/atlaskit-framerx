@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "lib": ["es2015", "dom"],
+        "module": "commonjs",
+        "jsx": "react",
+        "outDir": "build",
+        "sourceMap": false,
+        "declaration": false
+    },
+    "exclude": ["node_modules", "build"]
+}
